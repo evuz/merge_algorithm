@@ -1,0 +1,14 @@
+{
+  "name": "gb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "perf": "node benchmark/perf.js"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "nodemon": "^2.0.4"
+  }
+}
