@@ -21,7 +21,7 @@ function mergeWithCursor(arr1, arr2) {
     }
 
     if (arr1Index >= arr1.length || arr2Index >= arr2.length) {
-      Array.prototype.unshift.apply(result, arr1.length ? arr1.splice(arr1Index) : arr2.splice(arr2Index));
+      Array.prototype.push.apply(result, arr1Index < arr1.length ? arr1.splice(arr1Index) : arr2.splice(arr2Index));
     }
   }
 
